@@ -4,8 +4,6 @@ pp() {
 	echo -e "\e[00;32m"$1"\e[00m"
 }
 
-HOST=`hostname`
-
 #########################################
 # Clean up old installation.
 #########################################
@@ -27,7 +25,7 @@ cleanup() {
 deps() {
 	pp "Checking system dependencies..."
 	echo
-	sudo apt-get install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip
+    sudo apt-get install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip pkg-config autoconf automake
 	echo
 }
 
@@ -233,11 +231,12 @@ execute() {
 	esac
 }
 
-if [ $# -eq 3 ]
+if [ $# -eq 4 ]
 then
 
-	NIMBUS=$2
-	BASEDIR=$3
+    NIMBUS=$2 # ip of the nimbus host
+    BASEDIR=$3 # install dir ex: /opt
+    HOST=$4 # ip of the host
 	START_SH=$BASEDIR"/start.sh"
 	STOP_SH=$BASEDIR"/stop.sh"
 

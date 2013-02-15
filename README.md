@@ -1,1 +1,1 @@
-[Wiki](https://github.com/maltoe/storm-install/wiki)
+[Wiki](https://github.com/sgomezvillamor/storm-install/wiki)

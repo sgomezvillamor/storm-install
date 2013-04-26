@@ -31,7 +31,7 @@ deps() {
 
         # CentOS
         #sudo yum groupinstall “Development tools”
-        #sudo yum install screen daemontools uuid-devel git java-1.6.0-openjdk unzip
+        #sudo yum install screen daemontools libuuid-devel uuid-devel git java-1.6.0-openjdk-devel unzip
 
 	echo
 }

@@ -234,9 +234,9 @@ execute() {
 if [ $# -eq 4 ]
 then
 
-    NIMBUS=$2 # ip of the nimbus host
-    BASEDIR=$3 # install dir ex: /opt
-    HOST=$4 # ip of the host
+        NIMBUS=$2 # ip of the nimbus host
+        BASEDIR=$3 # install dir ex: /opt
+        HOST=$4 # ip of the host
 	START_SH=$BASEDIR"/start.sh"
 	STOP_SH=$BASEDIR"/stop.sh"
 
@@ -259,7 +259,7 @@ then
 		pp "Phase installation complete."
 	fi
 else
-	echo "Usage: ./install_storm <number_of_phase>/all <nimbus> <installdir>"
+	echo "Usage: ./install_storm <number_of_phase>/all <nimbus_ip> <installdir> <host_ip>"
 	echo "Phases:"
 	for ((i=0;i<${#PHASES[@]};i++))
 	do

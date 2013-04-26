@@ -25,7 +25,7 @@ cleanup() {
 deps() {
 	pp "Checking system dependencies..."
 	echo
-    sudo apt-get install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip pkg-config autoconf automake
+        sudo yum install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip pkg-config autoconf automake
 	echo
 }
 

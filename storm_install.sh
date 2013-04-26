@@ -49,7 +49,7 @@ zookeeper() {
 
 	ZK_VERSION="3.3.6"
 	ZK_DIR=$BASEDIR"/zookeeper"
-	ZK_CONFIGFILE="zoo.conf"
+	ZK_CONFIGFILE=$ZK_DIR"/zoo.conf"
 	ZK_CONF=$ZK_DIR"/"$ZK_CONFIGFILE
 	ZK_RUN=$ZK_DIR"/run"
 	ZK_PURGE=$ZK_DIR"/purge.sh"
